@@ -19,7 +19,7 @@ This Python script scans a `.txt` file for URLs and DOIs, then checks if each li
 The script expects a plain text file (e.g., `file.txt`) containing links and/or DOIs scattered anywhere in the text.
 
 ### Example input:
-This paper can be found at https://doi.org/10.1080/01434632.2020.1749644.  
+This paper can be found at https://Google.com.  
 Another source: https://example.com/article.
 
 ---
@@ -41,8 +41,8 @@ pip install requests
 
 ## 🧠 Example Output
 ```php
-https://doi.org/10.1080/01434632.2020.1749644
-→ ✅ Available (Status: 302, Redirect: https://www.tandfonline.com/...)
+https://Google.com
+→ ✅ Available (Status: 302, Redirect: https://www.Google...)
 
 https://nonexistent.example.com
 → ❌ Unavailable (RequestException: ConnectionError - Failed to establish a new connection)
